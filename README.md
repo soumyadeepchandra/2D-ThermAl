@@ -4,9 +4,12 @@ This repository contains code for the paper
 # Abstract 
 Thermal analysis is increasingly critical in modern integrated circuits, where non-uniform power dissipation and high transistor densities lead to rapid temperature spikes and reliability concerns. Traditional methods such as FEM-based simulations are accurate but computationally prohibitive for early-stage design, often requiring multiple iterative redesign cycles to resolve late-stage thermal failures. To address these challenges, we propose `ThermAl', a physics-informed generative AI framework which effectively identifies heat sources and estimates full-chip transient and steady-state thermal distributions from input activity profiles. ThermAl leverages a hybrid U-Net architecture enhanced with positional encoding and a Boltzmann regularizer to maintain physical fidelity. Our model is trained on an extensive dataset of heat dissipation maps for more than 200+ circuit configurations, ranging from simple logic gates (e.g., inverters, NAND, XOR) to complex designs, generated via COMSOL and Cadence EDA flows. The dataset captures diverse activity patterns, and we note that material-dependent thermal properties may require targeted fine-tuning to ensure accuracy across different fabrication contexts. Experimental results demonstrate that ThermAl delivers precise temperature mappings for large circuits, with a root mean squared error (RMSE) of only $0.71^{\circ}$C and outperforms conventional FEM tools by running up to $\sim200\times$ faster. We analyze performance across diverse layouts and workloads, and discuss its applicability to large-scale EDA workflows. Limitations such as 2D-only modeling and real-world validation are addressed with concrete future directions, including 3D extension, generalization across technology nodes, and transfer learning strategies. 
 
-
-![alt text](https://github.com/soumyadeepchandra/2D-ThermAl/blob/main/Model.jpg?raw=true)
+## Motivation for ThermAl
 ![alt text](https://github.com/soumyadeepchandra/2D-ThermAl/blob/main/Motivation.jpg?raw=true)
+
+## Model Pipeline
+![alt text](https://github.com/soumyadeepchandra/2D-ThermAl/blob/main/Model.jpg?raw=true)
+
 
 ## Enviroment
 Pytorch == 2.0.1, 
