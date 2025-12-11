@@ -18,7 +18,7 @@ python == 3.11,
 CUDA == 11.7
 
 ## Datasets used
-The dataset can be found here: [2D-ThermAl](https://bit.ly/thermal2d)
+The dataset can be found here: [2D-ThermAl]([https://bit.ly/thermal2d](https://purdue0-my.sharepoint.com/:f:/g/personal/chand133_purdue_edu/IgAB4G-8tmVgQ5PNUFUJt_IVASPrY6_te7pSm8-dmKiQgn4))
 Please email: chand133@purdue.edu if you want access to download.
 
 1. Download the dataset data.zip (Cholec80 / any other dataset). 
